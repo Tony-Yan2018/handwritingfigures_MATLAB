@@ -1,5 +1,6 @@
 function v=vectN(im, k)% returns the characteristic vector of a number N
-sampleRows = round(linspace(1,size(im,1),k));% to get an integer
+sampleRows = round(linspace(1,size(im,1),k+2));% to get an integer
+sampleRows = sampleRows(2:end-1);% the boundaries are excluded
 width = size(im,2);
 left = zeros(1,k);
 right = zeros(1,k);
