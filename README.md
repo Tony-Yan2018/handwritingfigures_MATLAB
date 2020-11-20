@@ -1,8 +1,8 @@
 # Recognition of hand-writing figures using MATLAB
 ## Image data to process  
-The hand-writing figures that our classifiers learns from:![trainingFig](https://github.com/Tony-Yan2018/handwritingfigures_MATLAB/blob/master/app.tif)  
+The hand-writing figures that our classifiers learns from:![trainingFig](https://drive.google.com/file/d/1lvDIV5tW8VsSYWjx3pvznHAKJvQlj2QK/view?usp=sharing)  
 Containing 10 lines of 10 figures and 20 samples(columns) of each of them.   
-The hand-writing figures that our classifiers will test upon:![testFig](https://github.com/Tony-Yan2018/handwritingfigures_MATLAB/blob/master/test.tif)  
+The hand-writing figures that our classifiers will test upon:![testFig](https://drive.google.com/file/d/1GPA7zeB-QctvVmhDmfY_alelrKt3Fbj8/view?usp=sharing)  
 Containing 10 lines of 10 figures and 10 samples(columns) of each of them.  
 ## Overview of classification approaches  
 1. **Extract numbers with projection**  
@@ -33,4 +33,4 @@ Containing 10 lines of 10 figures and 10 samples(columns) of each of them.
     *probKNN.m*: returns the probability vector of a test sample. Size of 10\*10\*10 when taking 5 sampling points on each side.  
 4. **Combination of the 2 classifiers**  
 We now have the output from the 2 classifiers which would all be the size of 10\*10\*10(the probability to 10 classes respectively). There are 2 kinds of combinations, sum and product. They can be described as follows:  
-![sum](https://latex.codecogs.com/gif.latex?p_s%28C_i%7Cx%29%20%3D%20%5Cfrac%20%7Bp_1%28C_i%7Cx%29&plus;p_2%28C_i%7Cx%29%7D%7B%5Csum_%7Bj%3D0%7D%5E9p_1%28C_j%7Cx%29&plus;p_2%28C_j%7Cx%29%7D)![prod](https://latex.codecogs.com/gif.latex?p_p%28V_i%7Cx%29%20%3D%20%5Cfrac%20%7Bp_1%28C_i%7Cx%29p_2%28C_i%7Cx%29%7D%7B%5Csum_%7Bj%3D0%7D%5E9p_1%28C_j%7Cx%29p_2%28C_j%7Cx%29%7D)
+![sum](https://latex.codecogs.com/gif.latex?p_s%28C_i%7Cx%29%20%3D%20%5Cfrac%20%7Bp_1%28C_i%7Cx%29&plus;p_2%28C_i%7Cx%29%7D%7B%5Csum_%7Bj%3D0%7D%5E9p_1%28C_j%7Cx%29&plus;p_2%28C_j%7Cx%29%7D) and ![prod](https://latex.codecogs.com/gif.latex?p_p%28V_i%7Cx%29%20%3D%20%5Cfrac%20%7Bp_1%28C_i%7Cx%29p_2%28C_i%7Cx%29%7D%7B%5Csum_%7Bj%3D0%7D%5E9p_1%28C_j%7Cx%29p_2%28C_j%7Cx%29%7D)
