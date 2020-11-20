@@ -9,6 +9,7 @@ Containing 10 lines of 10 figures and 10 samples(columns) of each of them.
     The first thing to do would be processing the training image from which we extract each figure and store its location. The general method is summed as follows:  
     - Get the profils of each figure by projecting them first horizontally and then vertically. The projcetion order must be followed due to this a little twisted figure arrange in the image, otherwise we may get very blurred boundaries.   
     - Now the embracing rectangles for each figure are appropriate on Left and Right side but have redundant space on the upper and lower side.  
+    ![rectangles](https://github.com/Tony-Yan2018/handwritingfigures_MATLAB/blob/master/Rectangles_embracing_numbers.jpg)  
     -  **Function Specifications:**    
     *getRows.m*: Project the image horizontally and returns 20 values(height of each projection line ).  
     *getColumns.m*: Project each horizontally-projected rectangle number block vertically and get the boundary of both L&R side.  
