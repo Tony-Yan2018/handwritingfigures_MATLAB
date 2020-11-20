@@ -1,8 +1,8 @@
 # Recognition of hand-writing figures using MATLAB
 ## Image data to process  
-The hand-writing figures that our classifiers learns from:![trainingFig](https://drive.google.com/file/d/1lvDIV5tW8VsSYWjx3pvznHAKJvQlj2QK/view?usp=sharing)  
+The hand-writing figures that our classifiers learns from:![trainingFig](https://github.com/Tony-Yan2018/handwritingfigures_MATLAB/blob/master/app.png)  
 Containing 10 lines of 10 figures and 20 samples(columns) of each of them.   
-The hand-writing figures that our classifiers will test upon:![testFig](https://drive.google.com/file/d/1GPA7zeB-QctvVmhDmfY_alelrKt3Fbj8/view?usp=sharing)  
+The hand-writing figures that our classifiers will test upon:![testFig](https://github.com/Tony-Yan2018/handwritingfigures_MATLAB/blob/master/test.png)  
 Containing 10 lines of 10 figures and 10 samples(columns) of each of them.  
 ## Overview of classification approaches  
 1. **Extract numbers with projection**  
