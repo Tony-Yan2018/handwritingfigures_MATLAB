@@ -15,7 +15,7 @@ for i=1:2:length(imTRows)
         % crop numbers and adjust height
         subIm = imcrop(imT,[x,y,dim_x,dim_y]);
         subIm = heightAdj(subIm);
-        % characteristic vector x of a sample
+        % feature vector x of a sample
         vectX = zoneVect(subIm,m,n);
         % distance array of a sample
         distArrT = zVectDistance(vectX,zoneVectAll);

@@ -1,4 +1,4 @@
-% returns a characteristic vector m*n of a segmented number image
+% returns a characteristic vector m*n of a segmented figure image
 function y=zoneVect(im,m,n)
 [a,b] =size(im);
 vectEach = zeros(m,n);
