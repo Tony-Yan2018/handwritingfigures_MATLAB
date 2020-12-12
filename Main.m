@@ -78,7 +78,7 @@ for row=1:10
 end
 end
 
-function y=metric_eval(matrix) % returns 
+function y=metric_eval(matrix) % returns macro & micro F1-score
 precision=zeros(1,10);
 recall=zeros(1,10);
 F1=zeros(1,10);

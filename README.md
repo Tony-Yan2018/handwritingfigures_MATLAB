@@ -31,7 +31,7 @@ Containing 10 lines of 10 figures and 10 samples(columns) of each of them.
     - **Function Specifications:**  
     *zoneVect.m*: returns the feature vector m\*n of a segmented figure.  
     *zoningVects.m*: returns feature vectors of all the numbers in the image.  
-    *probKNN.m*: returns the probability vector of a test sample. Size of 10\*10\*10 when taking 5 sampling points on each side.  
+    *probKNN.m*: returns the probability vector of a test sample. Size of 10\*10\*10 when taking m=n=5 in zoning.  
 4. **Combination of the 2 classifiers**  
 We now have the output from the 2 classifiers which would all be the size of 10\*10\*10(the probability to 10 classes respectively). There are 2 kinds of combinations, sum and product. They can be described as follows:  
 ![sum](https://latex.codecogs.com/gif.latex?p_s%28C_i%7Cx%29%20%3D%20%5Cfrac%20%7Bp_1%28C_i%7Cx%29&plus;p_2%28C_i%7Cx%29%7D%7B%5Csum_%7Bj%3D0%7D%5E9p_1%28C_j%7Cx%29&plus;p_2%28C_j%7Cx%29%7D) and ![prod](https://latex.codecogs.com/gif.latex?p_p%28V_i%7Cx%29%20%3D%20%5Cfrac%20%7Bp_1%28C_i%7Cx%29p_2%28C_i%7Cx%29%7D%7B%5Csum_%7Bj%3D0%7D%5E9p_1%28C_j%7Cx%29p_2%28C_j%7Cx%29%7D)
