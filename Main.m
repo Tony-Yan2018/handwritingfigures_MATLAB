@@ -1,8 +1,12 @@
+function y=Main(k)
+if isa(k,'char')
+    k=str2num(k);
+end
 im = 1-imbinarize(imread('app.tif'));
 imtest = 1-imbinarize(imread('test.tif'));
 classifier1 = posteriorProbs(im,imtest,5);
 zonvect = zoningVects(im,5,5);
-classifier2 = probKNNAll(imtest,5,5,11,zonvect);
+classifier2 = probKNNAll(imtest,5,5,k,zonvect);
 
 % sum combination
 prob_sum = zeros(10,10,10);
@@ -43,6 +47,10 @@ prodResult=res_prod
 prod_acc=accuracy(res_prod)
 confusionMatrixOfProd=confusion_matrix(res_prod)
 metricsProd=metric_eval(confusionMatrixOfProd)
+y=[metricsSum, metricsProd];
+end
+
+
 
 function res=getResult(prob)
 res = zeros(10,10);

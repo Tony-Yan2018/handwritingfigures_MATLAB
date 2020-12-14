@@ -17,4 +17,4 @@ while k>0
     pickArr(index) = pickArr(index)+1; % index: class of the smallest (nearest) element after each iteration
     k=k-1;
 end
-y=pickArr/km;
+y=pickArr./km;
